@@ -1,3 +1,4 @@
+
 import os
 from os.path import dirname, exists
 
@@ -12,7 +13,7 @@ path = "/home/pi/DBN/BigDog.wav"
 class AnimalSounds(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-       self.settings["file_path"] = "/home/pi/DBN/BigDog.wav"
+       #self.settings["file_path"] = "/home/pi/DBN/BigDog.wav"
 
     @intent_file_handler('sounds.animal.intent')
     def handle_sounds_animal(self, message):
